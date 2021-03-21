@@ -11,8 +11,6 @@ header {
   background: #ccc;
 }
 
-
-
 #first {
 	float:left;
 	background: #666;
@@ -43,15 +41,14 @@ header {
 	width:100%;
 	padding:20px;
 	margin-top:40px;
-	height:350px;
+	height:300px;
 
 }
 
 #behind {
-	width:98%;
 	background: #6ea3da;
 	padding:20px;
-	margin:20px;
+	margin:40px;
 }
 
 aside {
