@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+  <a  id="copy" onclick="CopyToClipboard('copy')" href="#">Copy me!</a>
+  <script>
+  /*  function CopyToClipboard(id){
+
+    var r = document.createRange();
+
+    r.selectNode(document.getElementById(id));
+
+    window.getSelection().removeAllRanges();
+
+    window.getSelection().addRange(r);
+
+    document.execCommand('copy');
+
+    window.getSelection().removeAllRanges();
+}
+     */
+
+var year = 2016;
+     function dayOfProgrammer(year) {
+      if(year == 1918) {
+        return '26.09.1918'
+      }else if(year % 4  == 0 && (year < 1918 || year % 400 == 0 || year % 100 != 0 )){
+        return `12.09.${year}`
+      }else return `13.09.${year}`
+     
+}
+var result = dayOfProgrammer(year)
+
+console.log(result)
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./firebase.css">
+</head>
+<body>
+
+<div class="pizza-card">
+   <div class="pizza-img" data-img="">
+       <img src="https://pizzamizza.az/upload/resize_cache/iblock/5e0/254_254_2/5e0bc2aa5f1be5967b28102955df8908.jpg?161761730264497" alt="">
+   </div>
+   <div class="pizza-name" data-name="barbeku">
+        Chicken Barbeku
+   </div>
+   <div class="pizza-price" data-price="6.90">
+       6.90
+   </div>
+
+   <a href="#" class="add-item">Add to cart</a>
+</div>
+
+<div class="pizza-card">
+    <div class="pizza-img">
+        <img src="https://pizzamizza.az/upload/resize_cache/iblock/05c/254_254_2/05c1187c21bea988b38e31089dfec366.jpg?161761730265933" alt="">
+    </div>
+    <div class="pizza-name" data-name="margarita">
+         Margarita
+    </div>
+    <div class="pizza-price" data-price="8.90">
+        8.90
+    </div>
+ 
+    <a href="#" class="add-item">Add to cart</a>
+ </div>
+
+
+<div class="cart">
+    <div class="cart-pizza">
+        <div class="cart-img"></div>
+        <div class="cart-name"></div>
+        <div class="cart-price"></div>
+    </div>
+
+</div>
+
+<div class="cart-total"></div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+<script src="./fire.js"></script>
+</body>
+</html>
