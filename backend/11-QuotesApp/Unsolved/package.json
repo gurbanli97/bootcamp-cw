@@ -1,0 +1,19 @@
+{
+  "name": "exercise1_feel_state",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.10.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.10"
+  }
+}

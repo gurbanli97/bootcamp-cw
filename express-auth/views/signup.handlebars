@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>SignUp</h1>
+    </div>
+
+
+       {{#if messages.signupSuccess}}
+        <div class="alert alert-success">{{messages.signupSuccess}}</div>
+    {{/if}}
+     {{#if messages.signupFailed}}
+        <div class="alert alert-danger">{{messages.signupFailed}}</div>
+    {{/if}}
+
+   <form action="/signup" method="POST">
+        <div class="row">
+            <div class="col-lg-12">
+                  <div class="form-group">
+                    <label for="firstname">Lirstname:</label>
+                    <input type="text" name="firstname" id="firstname" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Lastname:</label>
+                    <input type="text" name="lastname" id="lastname" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary form-control">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

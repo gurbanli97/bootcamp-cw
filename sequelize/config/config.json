@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "bootcamp2021",
+    "database": "db_for_dev",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "bootcamp2021",
+    "database": "db_for_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "bootcamp2021",
+    "database": "db_for_prod",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

@@ -1,0 +1,9 @@
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome, {{user.firstname}}</p>
+{{> messages}}
+    {{#if isAdmin}}
+<a href="/admin" class="btn btn-secondary">Admin</a>
+<a href="/category/add" class="btn btn-secondary">Add Category</a>
+    {{/if}}
+<a href="/product/add" class="btn btn-secondary">Add Product</a>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>

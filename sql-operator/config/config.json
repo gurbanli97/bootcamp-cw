@@ -1,0 +1,8 @@
+{
+    "host": "localhost",
+    "username": "root",
+    "password": "bootcamp2021",
+    "port": 3306,
+    "database": "relations",
+    "dialect": "mysql"
+}

@@ -10,6 +10,6 @@ services:
         image: phpmyadmin
         ports: 
             - 8081:80
-        links: 
+        links:  
             - db:db
         

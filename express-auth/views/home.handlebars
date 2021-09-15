@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Welcome</h1>
+    </div>
+
+    {{#if messages.successMessage}}
+        <div class="alert alert-success">{{messages.successMessage}}</div>
+    {{/if}}
+     {{#if messages.errorMessage}}
+        <div class="alert alert-danger">{{messages.errorMessage}}</div>
+    {{/if}}
+
+
+   <form action="/" method="POST">
+        <div class="row">
+            <div class="col-lg-12">
+               {{!--  <div class="form-group">
+                    <label for="author">Choose author:</label>
+                    <select name="author" id="author">
+                        {{#each authors}}
+                        <option value="{{this.dataValues.id}}"> {{this.dataValues.firstname}} {{this.dataValues.lastname}}</option>
+                        {{/each}}
+                    </select>
+                </div> --}}
+                  <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" name="title" id="title" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="article">Article:</label>
+                    <textarea name="article" id="article" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary form-control">Save</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
